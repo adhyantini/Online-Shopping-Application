@@ -1,0 +1,19 @@
+<h1>Items In Cart</h1>
+<table border="1" cellpadding="15" cellspacing="15">
+  <thead>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Remove</th>
+  </thead>
+  <tr *ngFor="let product of productList">
+    <td>{{ product.name }} X {{ product.num }} Items</td>
+    <td>{{ product.price }}</td>
+    <td><button (click)="remove(product.name)">Remove</button></td>
+  </tr>
+  <tr>
+    <td><b>Total Bill :</b></td>
+    <td>
+      <b>{{ bill }}</b>
+    </td>
+  </tr>
+</table>

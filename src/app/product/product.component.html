@@ -1,0 +1,18 @@
+<h2>Inventory Products</h2>
+<table border="1">
+  <thead>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Update</th>
+  </thead>
+  <tr *ngFor="let product of products">
+    <td>{{ product.name }}</td>
+    <td>{{ product.price | currency: "INR" }}</td>
+    <td>
+      <app-price-updater
+        [pricevalue]="product.price"
+        (update)="setNewPrice($event, product.id)"
+      ></app-price-updater>
+    </td>
+  </tr>
+</table>

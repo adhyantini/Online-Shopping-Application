@@ -1,0 +1,53 @@
+<h2 id="display">Welcome to Addys shop</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card card-signin my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">Sign In</h5>
+          <small
+            >Use "user" as username and password or "admin" as username and
+            password to login
+          </small>
+          <form class="form-signin">
+            <div class="form-label-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                [(ngModel)]="username"
+                name="username"
+                id="username"
+                class="form-control"
+              />
+            </div>
+            <div class="form-label-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                [(ngModel)]="password"
+                name="password"
+                id="password"
+                class="form-control"
+              />
+            </div>
+            <div class="form-label-group">
+              <button
+                type="button"
+                id="login"
+                (click)="loginCheck()"
+                class="btn btn-lg btn-primary btn-block text-uppercase"
+              >
+                Login
+              </button>
+              >
+              <br />
+              <a routerLink="/registration">
+                Dont have an account yet? Sign up here
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

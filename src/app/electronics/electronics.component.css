@@ -1,0 +1,27 @@
+.container-fluid {
+  margin-top: 80px;
+}
+
+.row-margin-05 {
+  margin: 10px;
+}
+.col {
+  flex: 1;
+  padding: 16px;
+}
+
+.card {
+  padding: 5px;
+  margin: 10px;
+}
+
+h1 {
+  margin-top: 80px;
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  margin-left: 50px;
+}

@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card card-signin my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">Sign Up</h5>
+          <form class="form-signin" [formGroup]="signupForm">
+            <div class="form-label-group">
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                id="inputEmail"
+                placeholder="Email"
+                name="email"
+                formControlName="email"
+                class="form-control"
+              />
+            </div>
+            <div class="error" *ngIf="email.invalid && email.touched">
+              Email is Invalid
+            </div>
+
+            <div class="form-label-group">
+              <label for="inputPassword">Password</label>
+              <input
+                type="password"
+                id="inputPassword"
+                placeholder="Password"
+                name="password"
+                formControlName="password"
+                class="form-control"
+              />
+            </div>
+            <div class="error" *ngIf="password.invalid && password.touched">
+              Password needs a minimum length of 4. Please type a valid password
+            </div>
+
+            <!--- Select gender Block --->
+            <div class="form-label-group">
+              <label for="select">Gender</label>
+              <select id="select" name="gender">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+
+            <div class="form-label-group">
+              <label for="country">Country</label>
+              <input
+                type="text"
+                id="country"
+                placeholder="Country"
+                name="country"
+                class="form-control"
+                formControlName="country"
+              />
+            </div>
+            <div class="error" *ngIf="country.errors && country.dirty">
+              Country Name is invalid
+            </div>
+
+            <div class="form-label-group">
+              <label for="code">Code</label>
+              <input
+                type="text"
+                id="code"
+                placeholder="code"
+                name="code"
+                formControlName="code"
+                class="form-control"
+              />
+            </div>
+            <div class="error" *ngIf="code.errors?.invalidCode && code.dirty">
+              Code is invalid
+            </div>
+            <!--- Buttons Block --->
+            <div class="form-label-group">
+              <button
+                type="button"
+                id="register"
+                class="btn btn-lg btn-primary btn-block text-uppercase"
+              >
+                Sign Up
+              </button>
+              <br />
+              <a routerLink="/"> Already have an account? Login here </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

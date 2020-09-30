@@ -1,0 +1,17 @@
+<h1>Hello {{ username }}, check out some of our bestsellers!</h1>
+<div class="container-fluid">
+  <div class="row row-margin-05">
+    <div class="col-sm-3" *ngFor="let products of productList">
+      <div class="card">
+        <img class="card-img-top" [src]="products.imgPath" alt="Card image" />
+        <div class="card-body">
+          <h4 class="card-title">{{ products.name }}</h4>
+
+          <p>{{ products.price | currency: "INR" }}</p>
+          <button *ngIf="isAdmin" (click)="delete(products.id)">Delete</button>
+          <button (click)="addToCart(products.id)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
