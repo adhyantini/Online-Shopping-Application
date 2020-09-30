@@ -10,26 +10,26 @@ It uses AJAX to fetch user data from a dummy json site.
 To login as user use "user" as username and password
 
 Login Page
-![Login Page](assets/images/Login_Page.png)
+![Login Page](src/assets/images/Login_Page.png)
 
 Home Page
-![Home Page](assets/images/User_Home_Page.png)
+![Home Page](src/assets/images/User_Home_Page.png)
 
 Cart
-![Cart](assets/images/cart.png)
+![Cart](src/assets/images/cart.png)
 
 ## Admin
 
 To login as admin, use "admin" as username and password.
 
 Admin Home Page
-![Admin Home Page](assets/images/admin_home_page.png)
+![Admin Home Page](src/assets/images/admin_home_page.png)
 
 Update Price
-![Update Price](assets/images/update_price.png)
+![Update Price](src/assets/images/update_price.png)
 
 View Users
-![View Users](assets/images/view_users.png)
+![View Users](src/assets/images/view_users.png)
 
 ## Development server
 
